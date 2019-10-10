@@ -1,0 +1,51 @@
+// Program
+class Car:
+   
+   carCount = 0
+
+   def __init__(self, name, price):
+      self.name = name
+      self.price = price
+      Car.carCount += 1
+   
+   def displayCount(self):
+     print ("Total Car %d" % Car.carCount)
+
+   def displayCar(self):
+      print ("Name : ", self.name,  ", Price: ", self.price)
+
+
+
+Car1 = Car("Avanza", 2000)
+Car2 = Car("Xenia", 5000)
+Car3 = Car("Panther", 10000)
+Car1.displayCar()
+Car2.displayCar()
+Car3.displayCar()
+print ("Total Car %d" % Car.carCount)
+
+//Output
+ C:\Users\Satans\Documents\Python>python tugas2.py
+Name :  Avanza , Price:  2000
+Name :  Xenia , Price:  5000
+Name :  Panther , Price:  10000
+Total Car 3
+
+//Program diatas adalah contoh program berorientasi objek dimana didalam nya terdapat class Car dan objek Nama mobil beserta harganya.
+
+def __init__(self, name, price): 
+      self.name = name
+      self.price = price
+// befungsi untuk mendeklarasikan nama objek berupa self, name, price.      
+// self wajib ada untuk memberitahukan bahwa class tersebut sendiri (Terdiri dari satu class)
+
+Car1 = Car("Avanza", 2000)
+Car2 = Car("Xenia", 5000)
+Car3 = Car("Panther", 10000)
+//Untuk memasukan data objek 
+
+Car1.displayCar()
+Car2.displayCar()
+Car3.displayCar()
+print ("Total Car %d" % Car.carCount) //Menampilkan Jumlah data yang ada
+//Menampilkan objek yang di panggil dari Car1, car2 dan Car3.
